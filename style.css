@@ -8,7 +8,10 @@ a {
 }
 
 .color {
-  color: #0EF6CC;
+  background-color: #0EF6CC;
+  color: #121416;
+  border-radius: 100px;
+  padding: 5px 10px;
 }
 
 .bold {
@@ -44,6 +47,9 @@ a {
   padding: 5px 10px;
   display: inline-block;
   font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  padding: 10px 40px;
 }
 .cta:hover {
   background-color: #0EF6CC !important;
@@ -57,16 +63,19 @@ a {
   align-items: flex-end;
   justify-content: center;
   gap: 10%;
+  position: relative;
+  z-index: 2;
 }
 .index-hero .texts {
   width: 70%;
-  margin: 100px 0;
+  margin: 150px 0;
 }
 .index-hero .texts h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 .index-hero .texts h1 span {
   display: inline-block;
@@ -74,6 +83,9 @@ a {
 }
 .index-hero .texts p {
   margin: 20px 0;
+}
+.index-hero .texts .cta {
+  margin-top: 10px;
 }
 .index-hero .lines {
   width: 40%;
@@ -124,6 +136,4 @@ a {
   .index-hero .lines {
     margin-top: 0px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
