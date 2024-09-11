@@ -1,6 +1,12 @@
 // tools
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect()
+/**
+ * Returns true if the element is in the viewport
+ * 
+ * @param {HTMLElement} element - Element to check if it's in the viewport
+ * @returns boolean 
+ */
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect()
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -9,7 +15,7 @@ function isElementInViewport(el) {
   )
 }
 
-// Index hero
+// Hero
 
 // h1 animation
 anime({
@@ -57,11 +63,18 @@ anime({
   },
 })
 
-// Index text
+// Text separator (h2)
 
 // Text
-function handleScroll() {
+/**
+ * Show text when it's in the viewport
+ * 
+ */
+function handleScrollText() {
   const element = document.querySelector('.color-anim')
+  if (!element) {
+    return
+  }
 
   if (isElementInViewport(element)) {
     element.classList.add('visible')
@@ -70,4 +83,34 @@ function handleScroll() {
   }
 }
 
-window.addEventListener('scroll', handleScroll)
+
+
+
+
+// Slide
+
+// activate titles
+function handleScrollSlider(index) {
+  const slideElem = document.querySelector(`#fase${index} h2`)
+  const titleElem = document.querySelector(`#titulo${index}`)
+  if (!slideElem) {
+    return
+  }
+
+  if (isElementInViewport(slideElem)) {
+    titleElem.classList.add("active")
+    console.log(`#titulo${index} active`)
+  } else {
+    titleElem.classList.remove("active")
+    console.log(`#titulo${index} remove`)
+  }
+}
+
+
+// Setup scroll events
+window.addEventListener('scroll', () => {
+  handleScrollText()
+  for (let i = 1; i <= 6; i++) {
+    handleScrollSlider(i)
+  }
+})
