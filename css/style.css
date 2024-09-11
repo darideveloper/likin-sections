@@ -149,14 +149,16 @@ a {
 .index-text {
   background-image: url("https://likinagency.com/wp-content/uploads/2024/09/como-llevar-tu-huella-digital-mas-alla-50.webp");
   min-height: 300px;
-  background-opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .index-text h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
+  line-height: 220%;
 }
 .index-text h2 .color-anim {
   background-color: #121416;
@@ -171,4 +173,8 @@ a {
 }
 .index-text h2 .color-anim.visible {
   background-color: rgba(14, 246, 204, 0.5);
+}
+
+[id^=titulo].active {
+  color: #0EF6CC !important;
 }/*# sourceMappingURL=style.css.map */
