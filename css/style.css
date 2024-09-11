@@ -40,7 +40,7 @@ a {
   font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 1200px) {
-  .daridev-section {
+  .daridev-section:not(.full-width) {
     padding: 0 20px;
     width: calc(100% - 40px);
   }
@@ -59,6 +59,7 @@ a {
   font-size: 1.5rem;
   border-radius: 100px;
   padding: 10px 40px;
+  transition-duration: 0.2s;
 }
 .cta:hover {
   background-color: #0EF6CC !important;
@@ -148,7 +149,7 @@ a {
 
 .index-text {
   background-image: url("https://likinagency.com/wp-content/uploads/2024/09/como-llevar-tu-huella-digital-mas-alla-50.webp");
-  min-height: 300px;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,4 +178,30 @@ a {
 
 [id^=titulo].active {
   color: #0EF6CC !important;
+}
+
+.index-shopify {
+  background: rgb(18, 20, 22);
+  background: linear-gradient(51deg, #121416 0%, rgba(94, 142, 62, 0.5) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  text-align: center;
+}
+.index-shopify img {
+  width: 400px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.index-shopify p {
+  width: 80%;
+  margin: 0 auto;
+  margin: 30px 0;
+}
+@media screen and (max-width: 500px) {
+  .index-shopify .cta {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

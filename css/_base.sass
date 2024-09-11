@@ -4,6 +4,7 @@ $color-green-50: rgba($color-green, 0.5)
 $color-white: #F4FEFD
 $color-grey: #1B2223
 $color-grey-light: #3A4F50
+$color-green-shopify: #5e8e3e
 
 // Global stules
 a
@@ -42,9 +43,10 @@ a
     font-family: 'Poppins', sans-serif
 
     @media screen and (max-width: 1200px)
-        padding: 0 20px
-        width: calc(100% - 40px)
-
+        &:not(.full-width)
+            padding: 0 20px
+            width: calc(100% - 40px)
+            
 .transition
     transition: all 0.3s
 
@@ -57,6 +59,7 @@ a
     font-size: 1.5rem
     border-radius: 100px
     padding: 10px 40px
+    transition-duration: 0.2s
 
     &:hover
         background-color: $color-green !important
