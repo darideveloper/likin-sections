@@ -1,0 +1,144 @@
+a {
+  color: #F4FEFD;
+  text-decoration: none;
+}
+
+.debug {
+  border: 1px solid red !important;
+}
+
+.color {
+  color: #0EF6CC;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bordered-text {
+  color: #121416;
+  text-shadow: 2px 0 #F4FEFD, -2px 0 #F4FEFD, 0 2px #F4FEFD, 0 -2px #F4FEFD;
+  opacity: 0.5;
+}
+
+.daridev-section {
+  background-color: #121416;
+  color: #F4FEFD;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .daridev-section {
+    padding: 0 20px;
+  }
+}
+
+.transition {
+  transition: all 0.3s;
+}
+
+.cta {
+  border: 2px solid #0EF6CC;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+.cta:hover {
+  background-color: #0EF6CC !important;
+  color: #121416 !important;
+  transform: scale(1.05);
+}
+
+.index-hero {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10%;
+}
+.index-hero .texts {
+  width: 70%;
+  margin: 100px 0;
+}
+.index-hero .texts h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.index-hero .texts h1 span {
+  display: inline-block;
+  margin: 5px;
+}
+.index-hero .texts p {
+  margin: 20px 0;
+}
+.index-hero .lines {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+}
+.index-hero .lines .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.index-hero .lines .line .line-inner {
+  border: 1px solid #F4FEFD;
+  height: 100px;
+}
+.index-hero .lines .line .line-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #F4FEFD;
+  border-radius: 50%;
+}
+.index-hero .lines .line span {
+  margin-bottom: 10px;
+}
+.index-hero .lines .line:nth-child(2) .line-inner {
+  height: 200px;
+}
+.index-hero .lines .line:nth-child(3) .line-inner {
+  height: 300px;
+}
+@media screen and (max-width: 750px) {
+  .index-hero {
+    flex-direction: column;
+    gap: 0;
+  }
+  .index-hero .texts {
+    width: 100%;
+    text-align: center;
+  }
+  .index-hero .texts h1 {
+    font-size: 2rem;
+  }
+  .index-hero .lines {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: -80px;
+  }
+  .index-hero .lines .line:nth-child(1) {
+    height: 100px;
+  }
+  .index-hero .lines .line:nth-child(2) .line-inner {
+    height: 150px;
+  }
+  .index-hero .lines .line:nth-child(3) .line-inner {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 858px) {
+  .index-hero .lines {
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+body {
+  background-color: #121416;
+  margin: 0;
+  padding: 0;
+}
+body > div {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=wordpress.css.map */

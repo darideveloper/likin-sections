@@ -1,0 +1,142 @@
+$color-black: #121416
+$color-green: #0EF6CC
+$color-white: #F4FEFD
+$color-grey: #1B2223
+$color-grey-light: #3A4F50
+
+// Global stules
+a
+    color: $color-white
+    text-decoration: none
+
+.debug
+    border: 1px solid red !important
+
+.color
+    color: $color-green
+
+.bold
+    font-weight: bold
+
+.bordered-text
+    color: $color-black
+    text-shadow: 2px 0 $color-white, -2px 0 $color-white, 0 2px $color-white, 0 -2px $color-white
+    opacity: 0.5
+
+.daridev-section
+    background-color: $color-black
+    color: $color-white
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+
+    @media screen and (max-width: 1200px)
+        padding: 0 20px
+
+.transition
+    transition: all 0.3s
+
+.cta
+    border: 2px solid $color-green
+    text-transform: uppercase
+    padding: 5px 10px
+    display: inline-block 
+    font-weight: bold
+
+    &:hover
+        background-color: $color-green !important
+        color: $color-black !important
+        transform: scale(1.05)
+
+// Secction styles
+.index-hero
+    font-family: 'Poppins', sans-serif
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    gap: 10%
+
+    .texts
+        width: 70%
+        margin: 100px 0
+
+        h1
+            font-size: 2.5rem
+            font-weight: 700
+            margin: 0
+            padding: 0
+
+            span
+                display: inline-block
+                margin: 5px
+
+        p
+            margin: 20px 0
+
+    .lines
+        width: 40%
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        gap: 20px
+
+        .line
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column-reverse
+
+            .line-inner
+                border: 1px solid $color-white
+                height: 100px
+
+            .line-dot
+                width: 10px
+                height: 10px
+                background-color: $color-white
+                border-radius: 50%
+
+            span
+                margin-bottom: 10px
+
+            &:nth-child(2)
+                .line-inner
+                    height: 200px
+            
+            &:nth-child(3)
+                .line-inner
+                    height: 300px
+
+    @media screen and (max-width: 750px)
+        flex-direction: column
+        gap: 0
+
+        .texts
+            width: 100%
+            text-align: center
+
+            h1
+                font-size: 2rem
+
+        .lines
+            width: 100%
+            gap: 10px
+            justify-content: space-evenly
+            margin-top: -80px
+
+            .line
+                &:nth-child(1)
+                    height: 100px
+
+                &:nth-child(2)
+                    .line-inner
+                        height: 150px
+                
+                &:nth-child(3)
+                    .line-inner
+                        height: 200px
+
+    @media screen and (max-width: 858px)
+
+        .lines
+            margin-top: 0px
