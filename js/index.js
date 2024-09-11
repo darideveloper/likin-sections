@@ -83,10 +83,6 @@ function handleScrollText() {
   }
 }
 
-
-
-
-
 // Slide
 
 // activate titles
