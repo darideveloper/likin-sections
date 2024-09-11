@@ -35,9 +35,11 @@ a {
   background-color: #121416;
   color: #F4FEFD;
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+}
+.daridev-section:not(.full-width) {
+  max-width: 1140px;
 }
 @media screen and (max-width: 1200px) {
   .daridev-section:not(.full-width) {
@@ -60,6 +62,7 @@ a {
   border-radius: 100px;
   padding: 10px 40px;
   transition-duration: 0.2s;
+  font-weight: bold;
 }
 .cta:hover {
   background-color: #0EF6CC !important;
@@ -189,6 +192,8 @@ a {
   flex-direction: column;
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .index-shopify img {
   width: 400px;
