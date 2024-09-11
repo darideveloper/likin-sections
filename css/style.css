@@ -24,16 +24,25 @@ a {
   opacity: 0.5;
 }
 
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .daridev-section {
   background-color: #121416;
   color: #F4FEFD;
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 1200px) {
   .daridev-section {
     padding: 0 20px;
+    width: calc(100% - 40px);
   }
 }
 
@@ -58,7 +67,6 @@ a {
 }
 
 .index-hero {
-  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -136,4 +144,31 @@ a {
   .index-hero .lines {
     margin-top: 0px;
   }
+}
+
+.index-text {
+  background-image: url("https://likinagency.com/wp-content/uploads/2024/09/como-llevar-tu-huella-digital-mas-alla-50.webp");
+  min-height: 300px;
+  background-opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.index-text h2 .color-anim {
+  background-color: #121416;
+  padding: 5px 10px;
+  border-radius: 100px;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  color: #F4FEFD;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.index-text h2 .color-anim.visible {
+  background-color: rgba(14, 246, 204, 0.5);
 }/*# sourceMappingURL=style.css.map */

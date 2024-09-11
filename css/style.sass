@@ -1,0 +1,68 @@
+$color-black: #121416
+$color-green: #0EF6CC
+$color-green-50: rgba($color-green, 0.5)
+$color-white: #F4FEFD
+$color-grey: #1B2223
+$color-grey-light: #3A4F50
+
+// Global stules
+a
+    color: $color-white
+    text-decoration: none
+
+.debug
+    border: 1px solid red !important
+
+.color
+    background-color: $color-green
+    color: $color-black
+    border-radius: 100px
+    padding: 5px 10px
+
+.bold
+    font-weight: bold
+
+.bordered-text
+    color: $color-black
+    text-shadow: 2px 0 $color-white, -2px 0 $color-white, 0 2px $color-white, 0 -2px $color-white
+    opacity: 0.5
+
+.parallax
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.daridev-section
+    background-color: $color-black
+    color: $color-white
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    font-family: 'Poppins', sans-serif
+
+    @media screen and (max-width: 1200px)
+        padding: 0 20px
+        width: calc(100% - 40px)
+
+.transition
+    transition: all 0.3s
+
+.cta
+    border: 2px solid $color-green
+    text-transform: uppercase
+    padding: 5px 10px
+    display: inline-block
+    font-weight: bold
+    font-size: 1.5rem
+    border-radius: 100px
+    padding: 10px 40px
+
+    &:hover
+        background-color: $color-green !important
+        color: $color-black !important
+        transform: scale(1.05)
+
+// Secction styles
+@import 'index_hero'
+@import 'index_text'
