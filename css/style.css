@@ -184,8 +184,6 @@ a {
 }
 
 .index-shopify {
-  background: rgb(18, 20, 22);
-  background: linear-gradient(51deg, #121416 0%, rgba(94, 142, 62, 0.5) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
