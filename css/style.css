@@ -158,7 +158,6 @@ a {
   align-items: center;
   position: relative;
   z-index: 2;
-  margin: 100vh auto;
 }
 .index-text h2 {
   font-size: 2rem;
