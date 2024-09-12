@@ -6,6 +6,7 @@
     align-items: center
     position: relative
     z-index: 2
+    margin: 100vh auto
 
     h2
         font-size: 2rem
@@ -13,15 +14,45 @@
         line-height: 220%
 
         .color-anim
-            background-color: $color-black
-            padding: 5px 10px
-            border-radius: 100px
-            transition-duration: 1s
-            transition-property: background-color
-            transition-timing-function: ease-in-out
-            color: $color-white
-            padding: 10px 20px
-            margin: 0 5px
+            position: relative
 
-            &.visible
-                background-color: $color-green-50
+            .text
+                background-color: $color-black
+                border-radius: 100px
+                transition-duration: 1s
+                transition-property: background-color
+                transition-timing-function: ease-in-out
+                color: $color-white
+                padding: 10px 20px
+                margin: 0 5px
+
+                &.visible
+                    animation: hightlightText 2s infinite alternate
+                    animation-delay: 1s
+                    background-color: rgba($color-green, 0.6)
+                
+            .logo
+                width: 120px
+                height: auto
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                opacity: 0
+                transition-duration: 3s
+                transition-property: opacity
+                transition-timing-function: ease-in-out
+                opacity: 0
+                transition-delay: 1s
+                z-index: -1
+
+                &.visible
+                    opacity: 40%
+
+    @keyframes hightlightText
+        0%
+            opacity: 1
+        50%
+            opacity: 1
+        100%
+            opacity: 0

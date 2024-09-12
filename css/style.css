@@ -158,6 +158,7 @@ a {
   align-items: center;
   position: relative;
   z-index: 2;
+  margin: 100vh auto;
 }
 .index-text h2 {
   font-size: 2rem;
@@ -165,8 +166,10 @@ a {
   line-height: 220%;
 }
 .index-text h2 .color-anim {
+  position: relative;
+}
+.index-text h2 .color-anim .text {
   background-color: #121416;
-  padding: 5px 10px;
   border-radius: 100px;
   transition-duration: 1s;
   transition-property: background-color;
@@ -175,8 +178,39 @@ a {
   padding: 10px 20px;
   margin: 0 5px;
 }
-.index-text h2 .color-anim.visible {
-  background-color: rgba(14, 246, 204, 0.5);
+.index-text h2 .color-anim .text.visible {
+  animation: hightlightText 2s infinite alternate;
+  animation-delay: 1s;
+  background-color: rgba(14, 246, 204, 0.6);
+}
+.index-text h2 .color-anim .logo {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 3s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  transition-delay: 1s;
+  z-index: -1;
+}
+.index-text h2 .color-anim .logo.visible {
+  opacity: 40%;
+}
+@keyframes hightlightText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 [id^=titulo].active {

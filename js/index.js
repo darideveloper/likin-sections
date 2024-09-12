@@ -71,15 +71,19 @@ anime({
  * 
  */
 function handleScrollText() {
-  const element = document.querySelector('.color-anim')
-  if (!element) {
+  const elemText = document.querySelector('.index-text .color-anim .text')
+  const elemLogo = document.querySelector('.index-text .color-anim .logo')
+
+  if (!elemText) {
     return
   }
 
-  if (isElementInViewport(element)) {
-    element.classList.add('visible')
+  if (isElementInViewport(elemText)) {
+    elemText.classList.add('visible')
+    elemLogo.classList.add('visible')
   } else {
-    element.classList.remove('visible')
+    elemText.classList.remove('visible')
+    elemLogo.classList.remove('visible')
   }
 }
 
@@ -87,17 +91,17 @@ function handleScrollText() {
 
 // activate titles
 function handleScrollSlider(index) {
-  const slideElem = document.querySelector(`#fase${index} h2`)
-  const titleElem = document.querySelector(`#titulo${index}`)
-  if (!slideElem) {
+  const elemSlide = document.querySelector(`#fase${index} h2`)
+  const elemTitle = document.querySelector(`#titulo${index}`)
+  if (!elemSlide) {
     return
   }
 
-  if (isElementInViewport(slideElem)) {
-    titleElem.classList.add("active")
+  if (isElementInViewport(elemSlide)) {
+    elemTitle.classList.add("active")
     console.log(`#titulo${index} active`)
   } else {
-    titleElem.classList.remove("active")
+    elemTitle.classList.remove("active")
     console.log(`#titulo${index} remove`)
   }
 }
