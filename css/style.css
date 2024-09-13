@@ -72,6 +72,18 @@ a {
   transform: scale(1.05) !important;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 150px 20px;
+    width: calc(100% - 40px);
+  }
+}
+
 .index-hero {
   display: flex;
   align-items: flex-end;
@@ -297,4 +309,22 @@ a {
   width: 30px;
   height: 30px;
   opacity: 0.4;
+}
+
+.ecommerce-hero-a {
+  background-color: #3A4F50;
+}
+.ecommerce-hero-a h1 {
+  font-size: 3rem;
+}
+.ecommerce-hero-a h1 span {
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .ecommerce-hero-a {
+    text-align: center;
+  }
+  .ecommerce-hero-a h1 {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
