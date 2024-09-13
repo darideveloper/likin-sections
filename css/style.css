@@ -63,13 +63,14 @@ a {
   font-size: 1.5rem;
   border-radius: 100px;
   padding: 10px 40px;
-  transition: all 0.3s !important;
   font-weight: bold;
+  transition-duration: 0.3s;
+  transition-property: all !important;
 }
 .cta:hover {
   background-color: #0EF6CC !important;
   color: #121416 !important;
-  transform: scale(1.05) !important;
+  transform: scale(1.1);
 }
 
 .container {
@@ -82,6 +83,11 @@ a {
     padding: 150px 20px;
     width: calc(100% - 40px);
   }
+}
+
+p.text-left {
+  width: 90%;
+  max-width: 600px;
 }
 
 .index-hero {
@@ -329,7 +335,20 @@ a {
   }
 }
 
-.ecommerce-hero-b p {
-  width: 90%;
-  max-width: 600px;
+.ecommerce-footer {
+  background-color: #1B2223;
+}
+.ecommerce-footer h2 {
+  font-size: 2.8rem;
+}
+.ecommerce-footer .cta {
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .ecommerce-footer {
+    text-align: center;
+  }
+  .ecommerce-footer h2 {
+    font-size: 2.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
