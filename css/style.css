@@ -351,4 +351,30 @@ p.text-left {
   .ecommerce-footer h2 {
     font-size: 2.2rem;
   }
+}
+
+.services-hero {
+  background-color: #1B2223;
+}
+.services-hero span.big {
+  font-size: 3.5rem;
+  display: block;
+  font-weight: bold;
+  color: #0EF6CC;
+  margin: 20px 0;
+}
+.services-hero span.medium {
+  font-size: 2rem;
+  display: block;
+}
+@media (max-width: 450px) {
+  .services-hero {
+    text-align: center;
+  }
+  .services-hero span.big {
+    font-size: 2rem;
+  }
+  .services-hero span.medium {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
