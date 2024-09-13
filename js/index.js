@@ -113,29 +113,40 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Init aos
-AOS.init({
-  duration: 600,
-  easing: 'ease-in-out',
-  once: false
-})
+// Init aos only if its not editing
+if (!currentUrl.includes('elementor')) {
+  // Init aos
+  setTimeout(() => {
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: false
+    })
+  }, 1000)
+
+  console.log('aos initialized')
+}
+
 
 // start section point animation
 const wrapper = document.querySelector('.index-start')
 const link = document.querySelectorAll('.index-start .hover-this')
 const cursor = document.querySelector('.index-start .cursor')
 
-const editCursor = e => {
-  const { clientX: x, clientY: y } = e
-  cursor.style.left = x + 'px'
-  cursor.style.top = y + 'px'
-}
+if (cursor) {
+  const editCursor = e => {
+    const { clientX: x, clientY: y } = e
+    cursor.style.left = x + 'px'
+    cursor.style.top = y + 'px'
+  }
+  
+  wrapper.addEventListener('mouseenter', () => {
+    cursor.classList.add('visible')
+  })
+  wrapper.addEventListener('mouseleave', () => {
+    cursor.classList.remove('visible')
+  })
+  
+  window.addEventListener('mousemove', editCursor)
 
-wrapper.addEventListener('mouseenter', () => {
-  cursor.classList.add('visible')
-})
-wrapper.addEventListener('mouseleave', () => {
-  cursor.classList.remove('visible')
-})
-
-window.addEventListener('mousemove', editCursor)
+}  
