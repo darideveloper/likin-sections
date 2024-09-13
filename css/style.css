@@ -311,20 +311,20 @@ a {
   opacity: 0.4;
 }
 
-.ecommerce-hero-a {
+.ecommerce-hero {
   background-color: #3A4F50;
 }
-.ecommerce-hero-a h1 {
+.ecommerce-hero h1 {
   font-size: 3rem;
 }
-.ecommerce-hero-a h1 span {
+.ecommerce-hero h1 span {
   display: inline-block;
 }
 @media screen and (max-width: 600px) {
-  .ecommerce-hero-a {
+  .ecommerce-hero {
     text-align: center;
   }
-  .ecommerce-hero-a h1 {
+  .ecommerce-hero h1 {
     font-size: 2.5rem;
   }
 }
