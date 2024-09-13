@@ -240,4 +240,25 @@ a {
   .index-shopify .cta {
     font-size: 1rem;
   }
+}
+
+.index-bussiness-type {
+  border: 1px solid red;
+  text-align: center;
+  margin: 100vh auto;
+}
+.index-bussiness-type h2 {
+  font-size: 2.5rem;
+}
+.index-bussiness-type .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 600px) {
+  .index-bussiness-type .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

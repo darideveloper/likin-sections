@@ -114,3 +114,10 @@ window.addEventListener('scroll', () => {
     handleScrollSlider(i)
   }
 })
+
+// Init aos
+AOS.init({
+  duration: 600,
+  easing: 'ease-in-out',
+  once: false
+})
