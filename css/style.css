@@ -37,6 +37,8 @@ a {
   width: 100%;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
 }
 .daridev-section:not(.full-width) {
   max-width: 1140px;
@@ -75,8 +77,6 @@ a {
   align-items: flex-end;
   justify-content: center;
   gap: 10%;
-  position: relative;
-  z-index: 2;
 }
 .index-hero .texts {
   width: 70%;
@@ -156,8 +156,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 2;
 }
 .index-text h2 {
   font-size: 2rem;
@@ -223,8 +221,6 @@ a {
   flex-direction: column;
   padding: 100px 0;
   text-align: center;
-  position: relative;
-  z-index: 2;
 }
 .index-shopify img {
   width: 400px;
@@ -243,21 +239,22 @@ a {
 }
 
 .index-bussiness-type {
-  border: 1px solid red;
   text-align: center;
-  margin: 100vh auto;
 }
-.index-bussiness-type h2 {
+.index-bussiness-type .content {
+  margin-top: 100px;
+}
+.index-bussiness-type .content h2 {
   font-size: 2.5rem;
 }
-.index-bussiness-type .buttons {
+.index-bussiness-type .content .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 @media screen and (max-width: 600px) {
-  .index-bussiness-type .buttons {
+  .index-bussiness-type .content .buttons {
     flex-direction: column;
     gap: 20px;
   }

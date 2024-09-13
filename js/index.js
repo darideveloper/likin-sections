@@ -99,10 +99,8 @@ function handleScrollSlider(index) {
 
   if (isElementInViewport(elemSlide)) {
     elemTitle.classList.add("active")
-    console.log(`#titulo${index} active`)
   } else {
     elemTitle.classList.remove("active")
-    console.log(`#titulo${index} remove`)
   }
 }
 
