@@ -49,7 +49,7 @@ a
         @media screen and (max-width: 1200px)
             padding: 0 20px
             width: calc(100% - 40px)
-            
+
 .transition
     transition: all 0.3s
 
@@ -83,3 +83,8 @@ a
 p.text-left
     width: 90%
     max-width: 600px
+
+// Aos no delay in mobile
+@media screen and (max-width: 700px)
+    [data-aos-delay]
+        transition-delay: 0.0s !important

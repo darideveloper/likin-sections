@@ -90,6 +90,11 @@ p.text-left {
   max-width: 600px;
 }
 
+@media screen and (max-width: 700px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}
 .index-hero {
   display: flex;
   align-items: flex-end;
@@ -376,5 +381,21 @@ p.text-left {
   }
   .services-hero span.medium {
     font-size: 1.5rem;
+  }
+}
+
+.services-huella h2 {
+  font-size: 2.5rem;
+  color: #0EF6CC;
+}
+.services-huella p.big {
+  font-size: 1.5rem;
+}
+.services-huella .cta {
+  font-size: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .services-huella .cta {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
