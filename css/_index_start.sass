@@ -1,0 +1,35 @@
+.index-start
+    text-align: center
+    cursor: none
+    background-color: $color-green-dark
+
+    .content
+        padding: 150px 0
+
+        h2
+            font-size: 2.5rem
+
+        .cta
+            border: $color-white 2px solid
+            color: $color-white
+
+    .cursor
+        pointer-events: none
+        position: fixed
+        padding: 0.3rem
+        background-color: white
+        border-radius: 50%
+        mix-blend-mode: difference
+        transition: transform 0.3s ease
+        transition: opacity 0.3s ease-in-out
+        padding: 0
+        opacity: 0
+        scale: 2.5
+
+        &.visible
+            opacity: 1
+
+        > img
+            width: 30px
+            height: 30px
+            opacity: 0.4

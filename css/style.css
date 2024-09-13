@@ -63,13 +63,13 @@ a {
   font-size: 1.5rem;
   border-radius: 100px;
   padding: 10px 40px;
-  transition-duration: 0.2s;
+  transition: all 0.3s !important;
   font-weight: bold;
 }
 .cta:hover {
   background-color: #0EF6CC !important;
   color: #121416 !important;
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
 }
 
 .index-hero {
@@ -258,4 +258,41 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+.index-start {
+  text-align: center;
+  cursor: none;
+  background-color: #0b7a66;
+}
+.index-start .content {
+  padding: 150px 0;
+}
+.index-start .content h2 {
+  font-size: 2.5rem;
+}
+.index-start .content .cta {
+  border: #F4FEFD 2px solid;
+  color: #F4FEFD;
+}
+.index-start .cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  opacity: 0;
+  scale: 2.5;
+}
+.index-start .cursor.visible {
+  opacity: 1;
+}
+.index-start .cursor > img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */

@@ -119,3 +119,23 @@ AOS.init({
   easing: 'ease-in-out',
   once: false
 })
+
+// start section point animation
+const wrapper = document.querySelector('.index-start')
+const link = document.querySelectorAll('.index-start .hover-this')
+const cursor = document.querySelector('.index-start .cursor')
+
+const editCursor = e => {
+  const { clientX: x, clientY: y } = e
+  cursor.style.left = x + 'px'
+  cursor.style.top = y + 'px'
+}
+
+wrapper.addEventListener('mouseenter', () => {
+  cursor.classList.add('visible')
+})
+wrapper.addEventListener('mouseleave', () => {
+  cursor.classList.remove('visible')
+})
+
+window.addEventListener('mousemove', editCursor)
