@@ -300,6 +300,7 @@ p.text-left {
   border: #F4FEFD 2px solid;
   color: #F4FEFD;
   cursor: none !important;
+  transition: 0.3s all;
 }
 .index-start .cursor {
   pointer-events: none;
