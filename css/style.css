@@ -189,6 +189,7 @@ p.text-left {
 }
 .index-text h2 .color-anim {
   position: relative;
+  display: inline-block;
 }
 .index-text h2 .color-anim .text {
   background-color: #121416;
