@@ -287,7 +287,7 @@ p.text-left {
 
 .index-start {
   text-align: center;
-  cursor: none;
+  cursor: none !important;
   background-color: #0b7a66;
 }
 .index-start .content {
@@ -299,19 +299,23 @@ p.text-left {
 .index-start .content .cta {
   border: #F4FEFD 2px solid;
   color: #F4FEFD;
+  cursor: none !important;
 }
 .index-start .cursor {
   pointer-events: none;
   position: fixed;
   padding: 0.3rem;
-  background-color: white;
+  background-color: #121416;
   border-radius: 50%;
-  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
   transition: transform 0.3s ease;
   transition: opacity 0.3s ease-in-out;
   padding: 0;
   opacity: 0;
   scale: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .index-start .cursor.visible {
   opacity: 1;
@@ -320,6 +324,7 @@ p.text-left {
   width: 30px;
   height: 30px;
   opacity: 0.4;
+  margin: 5px 0;
 }
 
 .ecommerce-hero {

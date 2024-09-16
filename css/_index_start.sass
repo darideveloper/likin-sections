@@ -1,6 +1,6 @@
 .index-start
     text-align: center
-    cursor: none
+    cursor: none !important
     background-color: $color-green-dark
 
     .content
@@ -12,19 +12,23 @@
         .cta
             border: $color-white 2px solid
             color: $color-white
+            cursor: none !important
 
     .cursor
         pointer-events: none
         position: fixed
         padding: 0.3rem
-        background-color: white
+        background-color: $color-black
         border-radius: 50%
-        mix-blend-mode: difference
+        mix-blend-mode: hard-light
         transition: transform 0.3s ease
         transition: opacity 0.3s ease-in-out
         padding: 0
         opacity: 0
         scale: 2.5
+        display: flex
+        align-items: center
+        justify-content: center
 
         &.visible
             opacity: 1
@@ -33,3 +37,4 @@
             width: 30px
             height: 30px
             opacity: 0.4
+            margin: 5px 0
